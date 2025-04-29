@@ -67,6 +67,7 @@ class BST{
                 }
             }
         }
+
         //DISPLAYING WORDS IN ASCENDING ORDER
         void display_ass(TreeNode* temp){
             if(temp==NULL) return;
@@ -74,6 +75,7 @@ class BST{
             cout<<temp->key<<" : "<<temp->meaning<<endl;
             display_ass(temp->right);
         }
+
         //DISPLAYING WORDS IN DESCENDING ORDER
         void display_des(TreeNode* temp){
             if(temp==NULL) return;
@@ -81,6 +83,7 @@ class BST{
             cout<<temp->key<<" : "<<temp->meaning<<endl;
             display_des(temp->left);
         }
+
         //SEARCHING MEANING 
         void search(string word){
             TreeNode* temp = root;
@@ -103,6 +106,7 @@ class BST{
             cout<<"The word is not present!"<<endl;
 
         }
+        
         //UPDATING MEANING
         void update(string word){
             TreeNode* temp = root;

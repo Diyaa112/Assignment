@@ -115,7 +115,7 @@ int main() {
         cout << "\n3 to search for a student";
         cout << "\n4 to exit" << endl;
         cin >> k;
-        
+
         cin.ignore();
 
         switch (k) {
@@ -154,6 +154,5 @@ int main() {
                 cout << "\nInvalid choice" << endl;
         }
     } while (k != 4);
-
     return 0;
 }
